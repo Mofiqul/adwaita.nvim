@@ -210,3 +210,5 @@ M.set = function ()
     highlight('TSError',                colors.red_1,               'none',                     'none',      'none' )
 end
 
+
+return M
