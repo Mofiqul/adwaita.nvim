@@ -1,4 +1,5 @@
-local highlight = require("utils").highlight
+local highlight = require'adwaita.utils'.highlight
+
 local colors = {
      blue_1=               "#99C1F1",
      blue_2=               "#62A0EA",
