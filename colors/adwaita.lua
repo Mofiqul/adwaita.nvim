@@ -1,4 +1,4 @@
-local theme = require('adwaita-dark')
+local theme = require'adwaita.dark'
 
 vim.cmd("hi clear")
 
