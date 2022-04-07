@@ -105,8 +105,8 @@ M.set = function ()
     highlight('TablineFill',                   colors.dark_3,   colors.light_3, 'none',      'none' )
     highlight('TablineSel',                    colors.dark_3,   colors.light_2, 'none',      'none' )
     highlight('Title',                         'none',          'none',         'bold',      'none' )
-    highlight('Visual',                        'none',          colors.blue_7,  'none',      'none' )
-    highlight('VisualNOS',                     'none',          colors.blue_7,  'none',      'none' )
+    highlight('Visual',                        'none',          colors.blue_1,  'none',      'none' )
+    highlight('VisualNOS',                     'none',          colors.blue_1,  'none',      'none' )
     highlight('WarningMsg',                    colors.yellow_4, 'none',         'bold',      'none' )
     highlight('WildMenu',                      colors.dark_3,   colors.blue_5,  'none',      'none' )
     highlight('Comment',                       colors.dark_1,   'none',         'none',      'none' )
@@ -245,9 +245,9 @@ M.set = function ()
     highlight('CompeDocumentation',            colors.dark_3,   colors.light_3, 'bold',      'none' )
     highlight('CompeDocumentationBorder',      colors.light_4,  colors.light_3, 'bold',      'none' )
 
-	highlight('LspReferenceText',              'none',          colors.blue_7,  'none',      'none' )
-	highlight('LspReferenceRead',              'none',          colors.blue_7,  'none',      'none' )
-	highlight('LspReferenceWrite',             'none',          colors.blue_7,  'none',      'none' )
+	highlight('LspReferenceText',              'none',          colors.blue_1,  'none',      'none' )
+	highlight('LspReferenceRead',              'none',          colors.blue_1,  'none',      'none' )
+	highlight('LspReferenceWrite',             'none',          colors.blue_1,  'none',      'none' )
 end
 
 return M
