@@ -1,14 +1,8 @@
 <h1 align="center">Adwaita.nvim</h1>
 
-Neovim colorscheme using Adwaita syntax
+Neovim colorscheme using Gnome Adwaita syntax
 
-## Dark
-
-![Adwaita Nvim Dark](./dark.png)
-
-## Light
-
-![Adwaita Nvim Light](./light.png)
+![Adwaita Nvim](./adwaita-nvim.png)
 
 ## Supported Plugins
 
