@@ -29,7 +29,7 @@ local colors = {
      green_6             = "#1F7F56",
      green_7             = "#1C6849",
      libadwaita_dark     = "#262626",
-     libadwaita_dark_alt = "#4F4F4F",
+     libadwaita_dark_alt = "#303030",
      light_1             = "#FFFFFF",
      light_2             = "#FCFCFC",
      light_3             = "#F6F5F4",
@@ -66,6 +66,7 @@ local colors = {
      yellow_4            = "#F5C211",
      yellow_5            = "#E5A50A",
      yellow_6            = "#D38B09",
+     split_and_borders   = "#4F4F4F"
 }
 
 
@@ -84,7 +85,7 @@ M.set = function ()
     highlight('DiffText',                      colors.violet_2,            colors.libadwaita_dark,     'none',      'none' )
     highlight('EndOfBuffer',                   colors.libadwaita_dark,     colors.libadwaita_dark,     'none',      'none' )
     highlight('ErrorMsg',                      colors.red_3,               colors.libadwaita_dark,     'underline', 'none' )
-    highlight('VertSplit',                     colors.libadwaita_dark_alt, colors.libadwaita_dark,     'none',      'none' )
+    highlight('VertSplit',                     colors.split_and_borders,   colors.libadwaita_dark,     'none',      'none' )
     highlight('Folded',                        colors.libadwaita_dark_alt, colors.libadwaita_dark,     'none',      'none' )
     highlight('FoldedColumn',                  colors.libadwaita_dark_alt, colors.libadwaita_dark,     'none',      'none' )
     highlight('SignColumn',                    colors.dark_2,              colors.libadwaita_dark,     'none',      'none' )
@@ -219,32 +220,32 @@ M.set = function ()
     highlight('NvimTreeRootFolder',            colors.light_4,             'none',                     'none',      'none' )
     highlight('NvimTreeFolderIcon',            colors.blue_2,              'none',                     'none',      'none' )
 
-    highlight('LspFloatWinNormal',             colors.light_4,             colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspFloatWinBorder',             colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaHoverBorder',            colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaSignatureHelpBorder',    colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaCodeActionBorder',       colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaDefPreviewBorder',       colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspLinesDiagBorder',            colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaRenameBorder',           colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaBorderTitle',            colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LSPSagaDiagnosticTruncateLine', colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaDiagnosticBorder',       colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaShTruncateLine',         colors.libadwaita_dark,     colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaDocTruncateLine',        colors.libadwaita_dark,     colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('LspSagaLspFinderBorder',        colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
+    highlight('LspFloatWinNormal',             colors.light_4,             'none',                     'none',      'none' )
+    highlight('LspFloatWinBorder',             colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaHoverBorder',            colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaSignatureHelpBorder',    colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaCodeActionBorder',       colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaDefPreviewBorder',       colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspLinesDiagBorder',            colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaRenameBorder',           colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaBorderTitle',            colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LSPSagaDiagnosticTruncateLine', colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaDiagnosticBorder',       colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaShTruncateLine',         colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaDocTruncateLine',        colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('LspSagaLspFinderBorder',        colors.split_and_borders,   'none',                     'none',      'none' )
 
-    highlight('TelescopePromptBorder',         colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('TelescopeResultsBorder',        colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('TelescopePreviewBorder',        colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none',      'none' )
-    highlight('TelescopeNormal',               colors.light_4,             colors.libadwaita_dark_alt, 'none',      'none' )
+    highlight('TelescopePromptBorder',         colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('TelescopeResultsBorder',        colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('TelescopePreviewBorder',        colors.split_and_borders,   'none',                     'none',      'none' )
+    highlight('TelescopeNormal',               colors.light_4,             'none',                     'none',      'none' )
     highlight('TelescopeSelection',            colors.light_4,             colors.blue_5,              'none',      'none' )
     highlight('TelescopeMultiSelection',       colors.light_4,             colors.blue_5,              'none',      'none' )
     highlight('TelescopeMatching',             colors.light_4,             'none',                     'bold',      'none' )
     highlight('TelescopePromptPrefix',         colors.light_4,             'none',                     'bold',      'none' )
 
     highlight('CompeDocumentation',            colors.light_4,             colors.libadwaita_dark_alt, 'bold',      'none' )
-    highlight('CompeDocumentationBorder',      colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'bold',      'none' )
+    highlight('CompeDocumentationBorder',      colors.split_and_borders,   colors.libadwaita_dark_alt, 'bold',      'none' )
 end
 
 
