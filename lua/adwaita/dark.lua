@@ -246,6 +246,10 @@ M.set = function ()
 
     highlight('CompeDocumentation',            colors.light_4,             colors.libadwaita_dark_alt, 'bold',      'none' )
     highlight('CompeDocumentationBorder',      colors.split_and_borders,   colors.libadwaita_dark_alt, 'bold',      'none' )
+
+	highlight('LspReferenceText',              'none',          colors.blue_7,  'none',      'none' )
+	highlight('LspReferenceRead',              'none',          colors.blue_7,  'none',      'none' )
+	highlight('LspReferenceWrite',             'none',          colors.blue_7,  'none',      'none' )
 end
 
 
