@@ -3,7 +3,7 @@
 local adwaita = {}
 local colors = {}
 
-if vim.g.adwaita_mode == 'dark' then
+if vim.o.background == 'dark' then
     colors.bg = '#303030'
     colors.fg = '#DEDDDA'
 else
