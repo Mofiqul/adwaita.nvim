@@ -86,8 +86,8 @@ M.set = function ()
     highlight('EndOfBuffer',                   colors.libadwaita_dark,     colors.libadwaita_dark,     'none',      'none' )
     highlight('ErrorMsg',                      colors.red_3,               colors.libadwaita_dark,     'underline', 'none' )
     highlight('VertSplit',                     colors.split_and_borders,   colors.libadwaita_dark,     'none',      'none' )
-    highlight('Folded',                        colors.libadwaita_dark_alt, colors.libadwaita_dark,     'none',      'none' )
-    highlight('FoldedColumn',                  colors.libadwaita_dark_alt, colors.libadwaita_dark,     'none',      'none' )
+    highlight('Folded',                        colors.dark_1,              colors.libadwaita_dark,     'none',      'none' )
+    highlight('FoldedColumn',                  colors.dark_1,              colors.libadwaita_dark,     'none',      'none' )
     highlight('SignColumn',                    colors.dark_2,              colors.libadwaita_dark,     'none',      'none' )
     highlight('IncSearch',                     colors.dark_4,              colors.yellow_4,            'none',      'none' )
     highlight('LineNr',                        colors.dark_2,              colors.libadwaita_dark,     'none',      'none' )
@@ -247,9 +247,9 @@ M.set = function ()
     highlight('CompeDocumentation',            colors.light_4,             colors.libadwaita_dark_alt, 'bold',      'none' )
     highlight('CompeDocumentationBorder',      colors.split_and_borders,   colors.libadwaita_dark_alt, 'bold',      'none' )
 
-	highlight('LspReferenceText',              'none',          colors.blue_7,  'none',      'none' )
-	highlight('LspReferenceRead',              'none',          colors.blue_7,  'none',      'none' )
-	highlight('LspReferenceWrite',             'none',          colors.blue_7,  'none',      'none' )
+	highlight('LspReferenceText',              'none',                     colors.blue_7,              'none',      'none' )
+	highlight('LspReferenceRead',              'none',                     colors.blue_7,              'none',      'none' )
+	highlight('LspReferenceWrite',             'none',                     colors.blue_7,              'none',      'none' )
 end
 
 
