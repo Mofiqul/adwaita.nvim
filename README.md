@@ -36,19 +36,11 @@ Plug 'Mofiqul/adwaita.nvim'
 
 ```lua
 -- Lua:
--- For dark theme
-vim.g.adwaita_mode = "dark"
--- For light theme
-vim.g.adwaita_mode = "light"
 vim.cmd([[colorscheme adwaita]])
 ```
 
 ```vim
 " Vim-Script:
-" For dark theme
-let g:adwaita_mode = "dark"
-" For light theme
-let g:adwaita_mode = "light"
 colorscheme adwaita
 ```
 
