@@ -74,7 +74,7 @@ local M = {}
 
 M.set = function ()
     highlight('Normal',                        colors.light_4,             colors.libadwaita_dark,     'none',      'none' )
-    highlight('ColorColumn',                   'none',                     colors.libadwaita_dark,     'none',      'none' )
+    highlight('ColorColumn',                   'none',                     colors.libadwaita_dark_alt, 'none',      'none' )
     highlight('Cursor',                        colors.light_5,             colors.libadwaita_dark,     'none',      'none' )
     highlight('CursorLine',                    'none',                     colors.libadwaita_dark_alt, 'none',      'none' )
     highlight('CursorColumn',                  'none',                     colors.libadwaita_dark_alt, 'none',      'none' )
