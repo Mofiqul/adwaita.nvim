@@ -248,6 +248,9 @@ M.set = function ()
 	highlight('LspReferenceText',              'none',          colors.blue_1,  'none',      'none' )
 	highlight('LspReferenceRead',              'none',          colors.blue_1,  'none',      'none' )
 	highlight('LspReferenceWrite',             'none',          colors.blue_1,  'none',      'none' )
+	highlight('CocHighlightText',              'none',          colors.blue_1,  'none',      'none' )
+	highlight('CocHighlightRead',              'none',          colors.blue_1,  'none',      'none' )
+	highlight('CocHighlightWrite',             'none',          colors.blue_1,  'none',      'none' )
 end
 
 return M
