@@ -68,7 +68,28 @@ local colors = {
 
 local M = {}
 
+local set_terminal_color = function()
+    vim.g.terminal_color_0          = colors.light_2
+    vim.g.terminal_color_1          = colors.red_2
+    vim.g.terminal_color_2          = colors.green_2
+    vim.g.terminal_color_3          = colors.orange_3
+    vim.g.terminal_color_4          = colors.blue_2
+    vim.g.terminal_color_5          = colors.purple_3
+    vim.g.terminal_color_6          = colors.teal_2
+    vim.g.terminal_color_7          = colors.light_4
+    vim.g.terminal_color_8          = colors.light_7
+    vim.g.terminal_color_9          = colors.red_1
+    vim.g.terminal_color_10         = colors.green_1
+    vim.g.terminal_color_11         = colors.orange_2
+    vim.g.terminal_color_12         = colors.purple_1
+    vim.g.terminal_color_13         = colors.blue_1
+    vim.g.terminal_color_14         = colors.teal_1
+    vim.g.terminal_color_15         = colors.light_3
+    vim.g.terminal_color_background = colors.light_2
+    vim.g.terminal_color_foreground = colors.dark_3
+end
 M.set = function ()
+    set_terminal_color()
     highlight('Normal',                        colors.dark_3,   colors.light_2, 'none',      'none' )
     highlight('ColorColumn',                   'none',          colors.dark_1,  'none',      'none' )
     highlight('Cursor',                        colors.light_5,  colors.dark_1,  'none',      'none' )
