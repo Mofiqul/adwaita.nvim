@@ -1,4 +1,5 @@
 local highlight = require 'adwaita.utils'.highlight
+local link_other_highlights = require 'adwaita.utils'.link_other_highlights
 
 local colors = {
     blue_1              = "#99C1F1",
@@ -275,6 +276,9 @@ M.set = function()
     highlight('CocHighlightText', 'none', colors.blue_7, 'none', 'none')
     highlight('CocHighlightRead', 'none', colors.blue_7, 'none', 'none')
     highlight('CocHighlightWrite', 'none', colors.blue_7, 'none', 'none')
+
+
+    link_other_highlights()
 end
 
 
