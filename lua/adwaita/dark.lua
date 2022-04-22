@@ -71,6 +71,11 @@ local colors = {
 }
 
 
+if vim.g.adwaita_darker == true then
+    colors.libadwaita_dark = "#0c0c0c"
+    colors.libadwaita_dark_alt = "#1e1e1e"
+end
+
 local M = {}
 
 local set_terminal_color = function()
