@@ -74,6 +74,7 @@ local colors = {
 if vim.g.adwaita_darker == true then
     colors.libadwaita_dark = "#0c0c0c"
     colors.libadwaita_dark_alt = "#1e1e1e"
+    colors.split_and_borders   = "#262626"
 end
 
 local M = {}
@@ -214,7 +215,7 @@ M.set = function()
     highlight('TSOperator', colors.light_4, 'none', 'none', 'none')
     highlight('TSKeyword', colors.orange_2, 'none', 'bold', 'none')
     highlight('TSKeywordFunction', colors.orange_2, 'none', 'bold', 'none')
-    highlight('TSKeywordOperator', colors.light_4, 'none', 'bold', 'none')
+    highlight('TSKeywordOperator', colors.orange_2, 'none', 'bold', 'none')
     highlight('TSException', colors.orange_4, 'none', 'none', 'none')
     highlight('TSType', colors.teal_2, 'none', 'bold', 'none')
     highlight('TSTypeBuiltin', colors.teal_2, 'none', 'bold', 'none')
