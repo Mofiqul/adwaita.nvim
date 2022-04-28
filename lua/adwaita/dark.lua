@@ -72,7 +72,7 @@ local colors = {
 
 
 if vim.g.adwaita_darker == true then
-    colors.libadwaita_dark = "#0c0c0c"
+    colors.libadwaita_dark     = "#0c0c0c"
     colors.libadwaita_dark_alt = "#1e1e1e"
     colors.split_and_borders   = "#262626"
 end
@@ -103,6 +103,8 @@ end
 M.set = function()
     set_terminal_color()
     highlight('Normal', colors.light_4, colors.libadwaita_dark, 'none', 'none')
+    highlight('NormalFloat', colors.light_4, colors.libadwaita_dark_alt, 'none', 'none')
+    highlight('FloatBorder', colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none', 'none')
     highlight('ColorColumn', 'none', colors.libadwaita_dark_alt, 'none', 'none')
     highlight('Cursor', colors.light_5, colors.libadwaita_dark, 'none', 'none')
     highlight('CursorLine', 'none', colors.libadwaita_dark_alt, 'none', 'none')
