@@ -37,12 +37,14 @@ Plug 'Mofiqul/adwaita.nvim'
 ```lua
 -- Lua:
 vim.g.adwaita_darker = true -- for darker version
+vim.g.adwaita_disable_cursorline = true -- to disable cursorline
 vim.cmd([[colorscheme adwaita]])
 ```
 
 ```vim
 " Vim-Script:
 let g:adwaita_darker = v:true " for darker version
+let g:adwaita_disable_cursorline = v:true " to disable cursorline
 colorscheme adwaita
 ```
 

@@ -73,8 +73,8 @@ local colors = {
 
 if vim.g.adwaita_darker == true then
     colors.libadwaita_dark     = "#0c0c0c"
-    colors.libadwaita_dark_alt = "#1e1e1e"
-    colors.split_and_borders   = "#262626"
+    colors.libadwaita_dark_alt = "#1c1c1c"
+    colors.split_and_borders   = "#1e1e1e"
 end
 
 local M = {}
@@ -107,7 +107,7 @@ M.set = function()
     highlight('FloatBorder', colors.libadwaita_dark_alt, colors.libadwaita_dark_alt, 'none', 'none')
     highlight('ColorColumn', 'none', colors.libadwaita_dark_alt, 'none', 'none')
     highlight('Cursor', colors.light_5, colors.libadwaita_dark, 'none', 'none')
-    highlight('CursorLine', 'none', colors.libadwaita_dark_alt, 'none', 'none')
+    highlight('CursorLine', 'none', vim.g.adwaita_disable_cursorline and 'none' or colors.libadwaita_dark_alt, 'none', 'none')
     highlight('CursorColumn', 'none', colors.libadwaita_dark_alt, 'none', 'none')
     highlight('Directory', colors.light_1, colors.libadwaita_dark, 'bold', 'none')
     highlight('DiffAdd', colors.teal_3, colors.libadwaita_dark, 'none', 'none')
@@ -122,7 +122,7 @@ M.set = function()
     highlight('SignColumn', colors.dark_2, colors.libadwaita_dark, 'none', 'none')
     highlight('IncSearch', colors.dark_4, colors.yellow_4, 'none', 'none')
     highlight('LineNr', colors.dark_2, colors.libadwaita_dark, 'none', 'none')
-    highlight('CursorLineNr', colors.light_7, colors.libadwaita_dark_alt, 'bold', 'none')
+    highlight('CursorLineNr', colors.light_7, vim.g.adwaita_disable_cursorline and 'none' or colors.libadwaita_dark_alt, 'bold', 'none')
     highlight('MatchParen', colors.light_4, colors.libadwaita_dark, 'bold', 'none')
     highlight('ModeMsg', colors.light_4, colors.libadwaita_dark_alt, 'none', 'none')
     highlight('MoreMsg', colors.light_4, colors.libadwaita_dark_alt, 'none', 'none')

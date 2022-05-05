@@ -5,7 +5,7 @@ local colors = {}
 
 if vim.o.background == 'dark' then
     if vim.g.adwaita_darker == true then
-        colors.bg = '#1e1e1e'
+        colors.bg = '#1c1c1c'
     else
         colors.bg = '#303030'
     end
@@ -15,7 +15,7 @@ if vim.o.background == 'dark' then
 else
     colors.bg = '#F6F5F4'
     colors.fg = '#3D3846'
-    colors.fgbar = '#1e1e1e'
+    colors.fgbar = '#1c1c1c'
     colors.bar = '#218787'
 end
 
