@@ -1,46 +1,42 @@
 -- Copyright (c) 2020-2021 Mofiqul Islam
 -- MIT license, see LICENSE for more details.
+local u = require'adwaita.utils'
 local adwaita = {}
 local colors = {}
 
-if vim.o.background == 'dark' then
-    if vim.g.adwaita_darker == true then
-        colors.bg = '#1E1E1E'
-    else
-        colors.bg = '#303030'
-    end
-    colors.fg = '#DEDDDA'
-else
-    colors.bg = '#F6F5F4'
-    colors.fg = '#3D3846'
-end
+colors = u.gen_colors() 
+
+
+local bg = vim.o.background == 'dark' and colors.libadwaita_dark_alt or colors.light_3
+local fg = vim.o.background == 'dark' and colors.light_2 or colors.dark_3
+
 
 adwaita.normal = {
-    b = { fg = colors.fg, bg = colors.bg },
-    a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
-    c = { fg = colors.fg, bg = colors.bg },
+    a = { fg = bg, bg = colors.teal_5, gui = 'bold' },
+    b = { fg = bg, bg = colors.teal_2 },
+    c = { fg = fg, bg = bg },
 }
 
 adwaita.visual = {
-    a = { fg = colors.bg, bg = colors.fg, gui = 'bold' },
-    b = { fg = colors.fg, bg = colors.bg },
+    a = { fg = bg, bg = colors.blue_5, gui = 'bold' },
+    b = { fg = fg, bg = bg },
 }
 
 adwaita.inactive = {
-    b = { fg = colors.bg, bg = colors.fg },
-    a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
+    b = { fg = fg, bg = bg },
+    a = { fg = fg, bg = bg, gui = 'bold' },
 }
 
 adwaita.replace = {
-    b = { fg = colors.fg, bg = colors.bg },
-    a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
-    c = { fg = colors.fg, bg = colors.bg },
+    a = { fg = bg, bg = colors.purple_4, gui = 'bold' },
+    b = { fg = bg, bg = colors.purple_2 },
+    c = { fg = fg, bg = bg },
 }
 
 adwaita.insert = {
-    a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
-    b = { fg = colors.fg, bg = colors.bg },
-    c = { fg = colors.fg, bg = colors.bg },
+    a = { fg = bg, bg = colors.orange_4, gui = 'bold' },
+    b = { fg = vim.o.background == 'dark' and bg or fg, bg = colors.orange_1 },
+    c = { fg = fg, bg = bg },
 }
 
 return adwaita
