@@ -61,6 +61,7 @@ M.gen_colors = function()
             green_7             = "#1C6849",
             libadwaita_dark     = "#262626",
             libadwaita_dark_alt = "#303030",
+            libadwaita_tree     = "#1E1E1E",
             light_1             = "#FFFFFF",
             light_2             = "#FCFCFC",
             light_3             = "#F6F5F4",
@@ -170,6 +171,7 @@ M.gen_colors = function()
     if vim.g.adwaita_darker == true then
         colors.libadwaita_dark     = "#0c0c0c"
         colors.libadwaita_dark_alt = "#1c1c1c"
+        colors.libadwaita_tree = "#101010"
         colors.split_and_borders   = "#1e1e1e"
     end
 
