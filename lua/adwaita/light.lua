@@ -176,7 +176,7 @@ M.set = function()
     highlight('htmlArg', colors.orange_5, 'none', 'none', 'none')
 
     highlight('NvimTreeRootFolder', colors.dark_3, 'none', 'none', 'none')
-    highlight('NvimTreeFolderIcon', colors.blue_3, 'none', 'none', 'none')
+    highlight('NvimTreeFolderIcon', colors.dark_3, 'none', 'none', 'none')
     highlight('NvimTreeFolderName', colors.dark_4, 'none', 'bold', 'none')
     highlight('NvimTreeEmptyFolderName', colors.dark_4, 'none', 'bold', 'none')
     highlight('NvimTreeOpenedFolderName', colors.dark_4, 'none', 'bold', 'none')
