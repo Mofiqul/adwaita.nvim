@@ -178,6 +178,11 @@ M.set = function()
 
     highlight('NvimTreeRootFolder', colors.light_4, 'none', 'none', 'none')
     highlight('NvimTreeFolderIcon', colors.blue_2, 'none', 'none', 'none')
+    highlight('NvimTreeFolderName', colors.light_4, 'none', 'bold', 'none')
+    highlight('NvimTreeEmptyFolderName', colors.light_4, 'none', 'bold', 'none')
+    highlight('NvimTreeOpenedFolderName', colors.light_4, 'none', 'bold', 'none')
+    highlight('NvimTreeNormal', 'none', colors.libadwaita_tree, 'none', 'none')
+    highlight('NvimTreeEndOfBuffer', 'none', colors.libadwaita_tree, 'none', 'none')
 
     highlight('LspFloatWinNormal', colors.light_4, 'none', 'none', 'none')
     highlight('LspFloatWinBorder', colors.split_and_borders, 'none', 'none', 'none')
