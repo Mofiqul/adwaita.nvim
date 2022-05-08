@@ -184,6 +184,10 @@ M.set = function()
     highlight('NvimTreeNormal', 'none', colors.light_1, 'none', 'none')
     highlight('NvimTreeEndOfBuffer', colors.light_1, colors.light_1, 'none', 'none')
 
+
+    highlight('BufferLineIndicatorSelected', 'none', colors.light_2, 'none', 'none')
+    highlight('BufferLineFill', 'none', colors.light_3, 'none', 'none')
+
     highlight('LspFloatWinNormal', colors.dark_3, 'none', 'none', 'none')
     highlight('LspFloatWinBorder', colors.light_4, 'none', 'none', 'none')
     highlight('LspSagaHoverBorder', colors.light_4, 'none', 'none', 'none')

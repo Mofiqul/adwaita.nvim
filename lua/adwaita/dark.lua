@@ -185,6 +185,9 @@ M.set = function()
     highlight('NvimTreeNormal', 'none', colors.libadwaita_tree, 'none', 'none')
     highlight('NvimTreeEndOfBuffer', colors.libadwaita_tree, colors.libadwaita_tree, 'none', 'none')
 
+    highlight('BufferLineIndicatorSelected', 'none', colors.libadwaita_dark, 'none', 'none')
+    highlight('BufferLineFill', 'none', colors.libadwaita_dark_alt, 'none', 'none')
+
     highlight('LspFloatWinNormal', colors.light_4, 'none', 'none', 'none')
     highlight('LspFloatWinBorder', colors.split_and_borders, 'none', 'none', 'none')
     highlight('LspSagaHoverBorder', colors.split_and_borders, 'none', 'none', 'none')
