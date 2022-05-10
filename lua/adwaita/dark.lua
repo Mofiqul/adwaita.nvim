@@ -221,7 +221,7 @@ M.set = function()
     highlight('DiagnosticError ', colors.red_2, 'none', 'none', 'none')
     highlight('DiagnosticWarn ', colors.yellow_6, 'none', 'none', 'none')
     highlight('DiagnosticHint ', colors.blue_4, 'none', 'none', 'none')
-    highlight('DiagnosticInfo ', colors.purple_5, 'none', 'none', 'none')
+    highlight('DiagnosticInfo ', colors.teal_5, 'none', 'none', 'none')
 
 
     highlight('CocHighlightText', 'none', colors.blue_7, 'none', 'none')
