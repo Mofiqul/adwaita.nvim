@@ -218,6 +218,12 @@ M.set = function()
     highlight('LspReferenceText', 'none', colors.blue_7, 'none', 'none')
     highlight('LspReferenceRead', 'none', colors.blue_7, 'none', 'none')
     highlight('LspReferenceWrite', 'none', colors.blue_7, 'none', 'none')
+    highlight('DiagnosticError ', colors.red_2, 'none', 'none', 'none')
+    highlight('DiagnosticWarn ', colors.yellow_6, 'none', 'none', 'none')
+    highlight('DiagnosticHint ', colors.blue_4, 'none', 'none', 'none')
+    highlight('DiagnosticInfo ', colors.purple_5, 'none', 'none', 'none')
+
+
     highlight('CocHighlightText', 'none', colors.blue_7, 'none', 'none')
     highlight('CocHighlightRead', 'none', colors.blue_7, 'none', 'none')
     highlight('CocHighlightWrite', 'none', colors.blue_7, 'none', 'none')
