@@ -113,7 +113,6 @@ M.set = function()
     highlight('Whitespace', colors.light_3, 'none', 'none', 'none')
 
 
-    highlight('TSError', colors.red_1, 'none', 'undercurl', 'none')
     highlight('TSTSPunctBracket', colors.dark_3, 'none', 'none', 'none')
     highlight('TSPunctSpecial', colors.red_3, 'none', 'none', 'none')
     highlight('markdownTSPunctSpecial', colors.teal_5, 'none', 'bold', 'none')
