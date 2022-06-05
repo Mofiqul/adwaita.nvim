@@ -225,8 +225,6 @@ M.set = function()
     highlight('CocHighlightWrite', 'none', colors.blue_7, 'none', 'none')
 
     highlight('CmpItemKind', colors.light_4, 'none', 'none', 'none')
-    highlight('CmpItemAbbr', colors.blue_6, 'none', 'none', 'none')
-    highlight('CmpItemAbbrMatch', colors.blue_6, 'none', 'none', 'none')
     link_other_highlights()
 end
 
