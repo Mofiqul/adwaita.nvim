@@ -211,9 +211,6 @@ M.set = function()
     highlight('TelescopeMatching', colors.teal_5, 'none', 'bold', 'none')
     highlight('TelescopePromptPrefix', colors.dark_3, 'none', 'bold', 'none')
 
-    highlight('CompeDocumentation', colors.dark_3, colors.light_3, 'bold', 'none')
-    highlight('CompeDocumentationBorder', colors.light_4, colors.light_3, 'bold', 'none')
-
     highlight('LspReferenceText', 'none', colors.blue_1, 'none', 'none')
     highlight('LspReferenceRead', 'none', colors.blue_1, 'none', 'none')
     highlight('LspReferenceWrite', 'none', colors.blue_1, 'none', 'none')
@@ -225,6 +222,7 @@ M.set = function()
     highlight('CocHighlightRead', 'none', colors.blue_1, 'none', 'none')
     highlight('CocHighlightWrite', 'none', colors.blue_1, 'none', 'none')
 
+    highlight('CmpItemKind', colors.dark_3, 'none', 'none', 'none')
     link_other_highlights()
 end
 

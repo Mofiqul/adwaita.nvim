@@ -6,9 +6,6 @@ end
 
 M.link_other_highlights = function()
     -- Nvim compe
-    vim.api.nvim_command('highlight link CompeDocumentation Pmenu')
-    vim.api.nvim_command('highlight link CompeDocumentationBorder Pmenu')
-    vim.api.nvim_command('highlight link CmpItemKind Pmenu')
     vim.api.nvim_command('highlight link CmpItemKindClass CmpItemKindConstructor')
     vim.api.nvim_command('highlight link CmpItemKindModule CmpItemKindKeyword')
     vim.api.nvim_command('highlight link CmpItemKindOperator TSOperator')
