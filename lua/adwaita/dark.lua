@@ -225,6 +225,9 @@ M.set = function()
     highlight('CocHighlightWrite', 'none', colors.blue_7, 'none', 'none')
 
     highlight('CmpItemKind', colors.light_4, 'none', 'none', 'none')
+
+    highlight('GitSignsAddLn', colors.green2, colors.green6, 'none', 'none')
+    highlight('GitSignsChangeLn', colors.orange_1, colors.orange_5, 'none', 'none')
     link_other_highlights()
 end
 
