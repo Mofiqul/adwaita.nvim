@@ -38,6 +38,7 @@ Plug 'Mofiqul/adwaita.nvim'
 -- Lua:
 vim.g.adwaita_darker = true -- for darker version
 vim.g.adwaita_disable_cursorline = true -- to disable cursorline
+vim.g.adwaita_transparent = true -- makes the background transparent
 vim.cmd([[colorscheme adwaita]])
 ```
 
@@ -45,6 +46,7 @@ vim.cmd([[colorscheme adwaita]])
 " Vim-Script:
 let g:adwaita_darker = v:true " for darker version
 let g:adwaita_disable_cursorline = v:true " to disable cursorline
+let g:adwaita_transparent = v:true " makes the background transparent
 colorscheme adwaita
 ```
 

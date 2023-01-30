@@ -172,6 +172,10 @@ M.gen_colors = function()
         colors.split_and_borders   = "#1e1e1e"
     end
 
+    if vim.g.adwaita_transparent then
+        colors.libadwaita_dark = 'none'
+    end
+
     return colors
 end
 
