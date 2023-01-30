@@ -165,7 +165,7 @@ M.gen_colors = function()
 
 
     end
-    if vim.g.adwaita_darker == true then
+    if vim.g.adwaita_darker then
         colors.libadwaita_dark     = "#000000"
         colors.libadwaita_dark_alt = "#1c1c1c"
         colors.libadwaita_tree = "#101010"
