@@ -112,7 +112,6 @@ M.set = function()
     highlight('SpellLocal', colors.red_3, 'none', 'undercurl', 'none')
     highlight('Whitespace', colors.light_3, 'none', 'none', 'none')
 
-
     highlight('TSTSPunctBracket', colors.dark_3, 'none', 'none', 'none')
     highlight('TSPunctSpecial', colors.red_3, 'none', 'none', 'none')
     highlight('markdownTSPunctSpecial', colors.teal_5, 'none', 'bold', 'none')
@@ -167,7 +166,6 @@ M.set = function()
     highlight('TSWarning', colors.yellow_2, 'none', 'none', 'none')
     highlight('TSError', colors.red_3, 'none', 'none', 'none')
 
-
     highlight('htmlTag', colors.teal_5, 'none', 'none', 'none')
     highlight('htmlEndTag', colors.teal_5, 'none', 'none', 'none')
     highlight('htmlTagName', colors.teal_5, 'none', 'none', 'none')
@@ -182,7 +180,6 @@ M.set = function()
     highlight('NvimTreeVertSplit', colors.light_2, colors.light_2, 'none', 'none')
     highlight('NvimTreeNormal', 'none', colors.light_1, 'none', 'none')
     highlight('NvimTreeEndOfBuffer', colors.light_1, colors.light_1, 'none', 'none')
-
 
     highlight('BufferLineIndicatorSelected', 'none', colors.light_2, 'none', 'none')
     highlight('BufferLineFill', 'none', colors.light_3, 'none', 'none')

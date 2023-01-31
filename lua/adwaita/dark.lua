@@ -113,7 +113,6 @@ M.set = function()
     highlight('SpellLocal', colors.red_3, 'none', 'undercurl', 'none')
     highlight('Whitespace', colors.libadwaita_dark_alt, 'none', 'none', 'none')
 
-
     highlight('@punctuation.bracket', colors.light_4, 'none', 'none', 'none')
     highlight('@punctuation.special', colors.red_3, 'none', 'none', 'none')
     highlight('@comment', colors.dark_2, 'none', 'none', 'none')
@@ -176,7 +175,6 @@ M.set = function()
     highlight('@text.danger', colors.red_3, 'none', 'none', 'none')
     highlight('@error', colors.red_4, 'none', 'none', 'none')
 
-
     highlight('htmlTag', colors.teal_2, 'none', 'none', 'none')
     highlight('htmlEndTag', colors.teal_2, 'none', 'none', 'none')
     highlight('htmlTagName', colors.teal_2, 'none', 'none', 'none')
@@ -226,7 +224,6 @@ M.set = function()
     highlight('DiagnosticWarn ', colors.yellow_6, 'none', 'none', 'none')
     highlight('DiagnosticHint ', colors.blue_4, 'none', 'none', 'none')
     highlight('DiagnosticInfo ', colors.teal_5, 'none', 'none', 'none')
-
 
     highlight('CocHighlightText', 'none', colors.blue_7, 'none', 'none')
     highlight('CocHighlightRead', 'none', colors.blue_7, 'none', 'none')
