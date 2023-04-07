@@ -64,9 +64,9 @@ M.set = function()
     hl('MoreMsg', { fg = colors.light_4, bg = colors.libadwaita_dark_alt })
     hl('NonText', { fg = colors.dark_4 })
     hl('Pmenu', { fg = colors.light_4, bg = colors.libadwaita_popup })
-    hl('PmenuSel', { fg = colors.light_4, bg = colors.blue_5 })
+    hl('PmenuSel', { fg = colors.light_4, bg = colors.menu_selected })
     hl('PmenuSbar', { bg = colors.dark_3 })
-    hl('PmenuThumb', { bg = colors.light_7 })
+    hl('PmenuThumb', { bg = colors.dark_1 })
     hl('Question', { fg = colors.blue_1, bg = colors.libadwaita_dark })
     hl('Search', { fg = colors.dark_4, bg = colors.yellow_4 })
     hl('SpecialKey', { fg = colors.dark_2, bg = colors.libadwaita_dark })
@@ -217,7 +217,7 @@ M.set = function()
     -- Typescript fix
     hl('typescriptParens', { fg = colors.light_4, bg = 'NONE' })
     -- A custome thing to make cmp doc border invisible
-    hl('CmpDocBorder', { fg = colors.libadwaita_popup, bg = colors.libadwaita_popup })
+    hl('CmpNDocBorder', { fg = colors.split_and_borders, bg = colors.libadwaita_dark })
 
     hl('htmlTag', { fg = colors.teal_2 })
     hl('htmlEndTag', { fg = colors.teal_2 })
@@ -239,9 +239,9 @@ M.set = function()
 
 
     -- Telescope nvim
-    hl('TelescopePromptBorder', { fg = colors.light_4 })
-    hl('TelescopeResultsBorder', { fg = colors.light_4 })
-    hl('TelescopePreviewBorder', { fg = colors.light_4 })
+    hl('TelescopePromptBorder', { fg = colors.split_and_borders })
+    hl('TelescopeResultsBorder', { fg = colors.split_and_borders })
+    hl('TelescopePreviewBorder', { fg = colors.split_and_borders })
     hl('TelescopeNormal', { fg = colors.light_4 })
     hl('TelescopeSelection', { fg = colors.light_4 })
     hl('TelescopeMultiSelection', { fg = colors.light_4, })

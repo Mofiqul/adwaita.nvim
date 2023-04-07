@@ -24,7 +24,6 @@ M.link_other_highlights = function()
     vim.api.nvim_command('highlight link CmpItemKindTypeParameter TSParameter')
 end
 
-
 M.gen_colors = function()
     local colors
     if vim.o.background == 'dark' then
@@ -96,7 +95,8 @@ M.gen_colors = function()
             yellow_4            = "#F5C211",
             yellow_5            = "#E5A50A",
             yellow_6            = "#D38B09",
-            split_and_borders   = "#4F4F4F"
+            split_and_borders   = "#4F4F4F",
+            menu_selected       = "#393939"
         }
     else
         colors = {
@@ -163,13 +163,11 @@ M.gen_colors = function()
             yellow_5    = "#E5A50A",
             yellow_6    = "#D38B09",
         }
-
-
     end
     if vim.g.adwaita_darker then
         colors.libadwaita_dark     = "#000000"
         colors.libadwaita_dark_alt = "#1c1c1c"
-        colors.libadwaita_tree = "#101010"
+        colors.libadwaita_tree     = "#101010"
         colors.split_and_borders   = "#1e1e1e"
     end
 
