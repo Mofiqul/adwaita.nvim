@@ -264,6 +264,8 @@ M.set = function()
 
     hl('GitSignsAddLn', { fg = colors.green_2, bg = colors.green_6 })
     hl('GitSignsChangeLn', { fg = colors.orange_1, bg = colors.orange_5 })
+
+    hl("GitSignsCurrentLineBlame", { fg = colors.dark_2 })
 end
 
 
