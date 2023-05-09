@@ -223,6 +223,8 @@ M.set = function()
 
     highlight('GitSignsAddLn', colors.green_6, colors.green_2, 'none', 'none')
     highlight('GitSignsChangeLn', colors.orange_5, colors.orange_1, 'none', 'none')
+    highlight("GitSignsCurrentLineBlame", colors.dark_1, "none", "none", "none")
+
     link_other_highlights()
 end
 
