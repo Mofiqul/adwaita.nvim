@@ -220,6 +220,7 @@ M.set = function()
     hl('BufferLineIndicatorSelected', { bg = colors.light_2 })
     hl('BufferLineFill', { bg = colors.light_3 })
 
+
     -- Telescope nvim
     hl('TelescopePromptBorder', { fg = colors.light_5 })
     hl('TelescopeResultsBorder', { fg = colors.light_5 })
@@ -230,26 +231,22 @@ M.set = function()
     hl('TelescopeMatching', { fg = colors.dark_3, bold = true })
     hl('TelescopePromptPrefix', { fg = colors.dark_3, bold = true })
 
-    hl('LspReferenceText', { bg = colors.blue_1 })
-    hl('LspReferenceRead', { bg = colors.blue_1 })
-    hl('LspReferenceWrite', { bg = colors.blue_1 })
+    hl('LspReferenceText', { bg = colors.blue_7 })
+    hl('LspReferenceRead', { bg = colors.blue_7 })
+    hl('LspReferenceWrite', { bg = colors.blue_7 })
     hl('DiagnosticError', { fg = colors.red_2 })
     hl('DiagnosticWarn', { fg = colors.yellow_6 })
     hl('DiagnosticHint', { fg = colors.blue_4 })
     hl('DiagnosticInfo', { fg = colors.teal_5 })
 
-
-    hl('CmpItemKind', { fg = colors.light_4 })
-    hl('CmpNDocBorder', { fg = colors.light_5 })
-
-    hl('CocHighlightText', { bg = colors.blue_1 })
-    hl('CocHighlightRead', { bg = colors.blue_1 })
-    hl('CocHighlightWrite', { bg = colors.blue_1 })
+    hl('CocHighlightText', { bg = colors.blue_7 })
+    hl('CocHighlightRead', { bg = colors.blue_7 })
+    hl('CocHighlightWrite', { bg = colors.blue_7 })
 
 
-    hl('GitSignsAddLn', { fg = colors.green_6, bg = colors.green_2 })
-    hl('GitSignsChangeLn', { fg = colors.orange_5, bg = colors.orange_1 })
-    hl("GitSignsCurrentLineBlame", { fg = colors.dark_1 })
+    hl('GitSignsAddLn', { fg = colors.green_6, bg = colors.green_6 })
+    hl('GitSignsChangeLn', { fg = colors.orange_1, bg = colors.orange_1 })
+    hl("GitSignsCurrentLineBlame", { fg = colors.dark_2 })
 end
 
 return M
