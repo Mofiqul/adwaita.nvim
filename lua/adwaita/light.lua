@@ -243,6 +243,11 @@ M.set = function()
     hl('CocHighlightRead', { bg = colors.blue_7 })
     hl('CocHighlightWrite', { bg = colors.blue_7 })
 
+    hl('CmpItemKind', { fg = colors.dark_3 })
+    -- Typescript fix
+    hl('typescriptParens', { fg = colors.light_4, bg = 'NONE' })
+    -- A custome thing to make cmp doc border invisible
+    hl('CmpNDocBorder', { fg = colors.light_5, bg = colors.light_2 })
 
     hl('GitSignsAddLn', { fg = colors.green_6, bg = colors.green_6 })
     hl('GitSignsChangeLn', { fg = colors.orange_1, bg = colors.orange_1 })
