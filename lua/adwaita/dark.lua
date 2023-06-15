@@ -1,12 +1,7 @@
 local u = require 'adwaita.utils'
 local colors = u.gen_colors()
-local nvim_set_hl = function(ns_id)
-    return function(name, val)
-        vim.api.nvim_set_hl(ns_id, name, val)
-    end
-end
 
-local hl = nvim_set_hl(0)
+local hl = u.highlight
 
 local M = {}
 
@@ -71,7 +66,7 @@ M.set = function()
     hl('Search', { fg = colors.dark_4, bg = colors.yellow_4 })
     hl('SpecialKey', { fg = colors.dark_2, bg = colors.libadwaita_dark })
     hl('StatusLine', { fg = colors.light_4, bg = colors.libadwaita_dark_alt })
-    hl('StatusLineNC', { fg = colors.light_4, bg = colors.libadwaita_dark_alt })
+    hl('StatusLineNC', { fg = colors.light_4, bg = colors.libadwaita_dark })
     hl('Tabline', { fg = colors.light_4, bg = colors.libadwaita_dark_alt })
     hl('TablineFill', { fg = colors.light_4, bg = colors.libadwaita_dark_alt })
     hl('TablineSel', { fg = colors.light_4, bg = colors.libadwaita_dark })

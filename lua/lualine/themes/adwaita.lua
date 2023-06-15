@@ -13,7 +13,7 @@ local fg = vim.o.background == 'dark' and colors.light_2 or colors.dark_3
 
 adwaita.normal = {
     a = { fg = bg, bg = colors.teal_5, gui = 'bold' },
-    b = { fg = colors.teal_2, bg = colors.dark_4 },
+    b = { fg = colors.teal_5, bg = vim.o.background == 'dark' and colors.dark_4 or colors.light_4 },
     c = { fg = fg, bg = bg },
 }
 
