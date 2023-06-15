@@ -23,6 +23,20 @@ Neovim colorscheme using Gnome Adwaita syntax
 Install via package manager
 
 ```lua
+-- Lazy.nvim:
+require('lazy').setup({
+    -- your other plugins
+    
+    -- this theme
+    {
+        "Mofiqul/adwaita.nvim",
+        lazy = false,
+        priority = 1000,
+    },
+})
+```
+
+```lua
 -- Packer:
 use 'Mofiqul/adwaita.nvim'
 ```
@@ -40,6 +54,23 @@ vim.g.adwaita_darker = true -- for darker version
 vim.g.adwaita_disable_cursorline = true -- to disable cursorline
 vim.g.adwaita_transparent = true -- makes the background transparent
 vim.cmd([[colorscheme adwaita]])
+```
+
+```lua
+-- Lua with Lazy.nvim:
+{
+    "Mofiqul/adwaita.nvim",
+    lazy = false,
+    priority = 1000,
+    
+    -- configure and set on startup
+    config = function()
+        vim.g.adwaita_darker = true             -- for darker version
+        vim.g.adwaita_disable_cursorline = true -- to disable cursorline
+        vim.g.adwaita_transparent = true        -- makes the background transparent
+        vim.cmd('colorscheme adwaita')
+    end
+}
 ```
 
 ```vim
