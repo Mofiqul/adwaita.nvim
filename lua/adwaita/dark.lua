@@ -46,7 +46,7 @@ M.set = function()
     hl('ErrorMsg', { fg = colors.red_3, bg = colors.libadwaita_dark, underline = true })
     hl('VertSplit', { fg = colors.split_and_borders, bg = colors.libadwaita_dark })
     hl('Folded', { fg = colors.dark_1, bg = colors.libadwaita_dark })
-    hl('FoldedColumn', { fg = colors.dark_1, bg = colors.libadwaita_dark })
+    hl('FoldeColumn', { fg = colors.dark_1, bg = colors.libadwaita_dark })
     hl('SignColumn', { fg = colors.dark_2, bg = colors.libadwaita_dark })
     hl('IncSearch', { fg = colors.dark_4, bg = colors.yellow_4 })
     hl('LineNr', { fg = colors.dark_2, bg = colors.libadwaita_dark })
@@ -260,7 +260,6 @@ M.set = function()
     hl('GitSignsAddLn', { fg = colors.green_2, bg = colors.green_6 })
     hl('GitSignsChangeLn', { fg = colors.orange_1, bg = colors.orange_5 })
     hl("GitSignsCurrentLineBlame", { fg = colors.dark_2 })
-
 end
 
 
