@@ -79,8 +79,8 @@ M.gen_colors = function()
             yellow_4            = "#F5C211",
             yellow_5            = "#E5A50A",
             yellow_6            = "#D38B09",
-            split_and_borders   = "#4F4F4F",
-            menu_selected       = "#393939"
+            split_and_borders   = "#5E5C64",
+            menu_selected       = "#504E55"
         }
     else
         colors = {
