@@ -1,4 +1,4 @@
-local u = require 'adwaita.utils'
+local u = require('adwaita.utils')
 
 local hl = u.highlight
 
@@ -7,22 +7,22 @@ local colors = u.gen_colors()
 local M = {}
 
 local set_terminal_color = function()
-    vim.g.terminal_color_0          = colors.light_2
-    vim.g.terminal_color_1          = colors.red_2
-    vim.g.terminal_color_2          = colors.green_2
-    vim.g.terminal_color_3          = colors.orange_3
-    vim.g.terminal_color_4          = colors.blue_2
-    vim.g.terminal_color_5          = colors.purple_3
-    vim.g.terminal_color_6          = colors.teal_2
-    vim.g.terminal_color_7          = colors.light_4
-    vim.g.terminal_color_8          = colors.light_7
-    vim.g.terminal_color_9          = colors.red_1
-    vim.g.terminal_color_10         = colors.green_1
-    vim.g.terminal_color_11         = colors.orange_2
-    vim.g.terminal_color_12         = colors.blue_1
-    vim.g.terminal_color_13         = colors.purple_1
-    vim.g.terminal_color_14         = colors.teal_1
-    vim.g.terminal_color_15         = colors.light_3
+    vim.g.terminal_color_0 = colors.light_2
+    vim.g.terminal_color_1 = colors.red_2
+    vim.g.terminal_color_2 = colors.green_2
+    vim.g.terminal_color_3 = colors.orange_3
+    vim.g.terminal_color_4 = colors.blue_2
+    vim.g.terminal_color_5 = colors.purple_3
+    vim.g.terminal_color_6 = colors.teal_2
+    vim.g.terminal_color_7 = colors.light_4
+    vim.g.terminal_color_8 = colors.light_7
+    vim.g.terminal_color_9 = colors.red_1
+    vim.g.terminal_color_10 = colors.green_1
+    vim.g.terminal_color_11 = colors.orange_2
+    vim.g.terminal_color_12 = colors.blue_1
+    vim.g.terminal_color_13 = colors.purple_1
+    vim.g.terminal_color_14 = colors.teal_1
+    vim.g.terminal_color_15 = colors.light_3
     vim.g.terminal_color_background = colors.light_2
     vim.g.terminal_color_foreground = colors.dark_3
 end
@@ -79,7 +79,7 @@ M.set = function()
     hl('Boolean', { fg = colors.violet_4 })
     hl('Float', { fg = colors.violet_4 })
     hl('Identifier', { fg = colors.orange_5 })
-    hl('Function', { fg = colors.blue_4 })
+    hl('Function', { fg = colors.chameleon_3 })
     hl('Statement', { fg = colors.purple_2 })
     hl('Conditional', { fg = colors.orange_5, bold = true })
     hl('Repeat', { fg = colors.purple_1 })
@@ -146,24 +146,24 @@ M.set = function()
     hl('@number', { fg = colors.violet_4 })
     hl('@boolan', { fg = colors.violet_4, bold = true })
     hl('@float', { fg = colors.teal_3 })
-    hl('@function', { fg = colors.blue_4 })
-    hl('@function.builtin', { fg = colors.blue_4 })
-    hl('@function.macro', { fg = colors.blue_4, bold = true })
+    hl('@function', { fg = colors.chameleon_3 })
+    hl('@function.builtin', { fg = colors.chameleon_3 })
+    hl('@function.macro', { fg = colors.chameleon_3, bold = true })
     hl('@attribute', { fg = colors.orange_4 })
     hl('@annotation', { fg = colors.yellow_4 })
     hl('@parameter', { fg = colors.orange_4 })
     hl('@parameter.reference', { fg = colors.orange_4 })
-    hl('@method', { fg = colors.blue_4 })
-    hl('@field', { fg = colors.teal_5 })
-    hl('@property', { fg = colors.teal_5 })
+    hl('@method', { fg = colors.chameleon_3 })
+    hl('@field', { fg = colors.dark_3 })
+    hl('@property', { fg = colors.dark_3 })
     hl('@constructor', { fg = colors.blue_5 })
     hl('@conditional', { fg = colors.orange_4, bold = true })
     hl('@repeat', { fg = colors.orange_5, bold = true })
     hl('@label', { fg = colors.purple_1 })
     hl('@operator', { fg = colors.purple_4 })
     hl('@keyword', { fg = colors.orange_5, bold = true })
-    hl('@keyword.function', { fg = colors.blue_4 })
-    hl('@keyword.operator', { fg = colors.purple_2, })
+    hl('@keyword.function', { fg = colors.orange_5, bold = true })
+    hl('@keyword.operator', { fg = colors.purple_2 })
     hl('@exception', { fg = colors.orange_4, bold = true })
     hl('@variable', { fg = colors.dark_3 })
     hl('@variable.builtin', { fg = colors.dark_3 })
@@ -201,13 +201,32 @@ M.set = function()
     hl('@lsp.type.variable', { link = '@variable' })
     hl('@lsp.type.keyword', { link = '@keyword' })
 
+    hl('@diff.plus', { link = 'DiffAdd' })
+    hl('@diff.minus', { link = 'DiffDelete' })
+    hl('@diff.delta', { link = 'DiffChange' })
+
+    hl('@text', { fg = colors.dark_3, bg = 'NONE' }) -- Legacy
+    hl('@markup.strong', { bold = true })
+    hl('@markup.italic', { italic = true })
+    hl('@markup.underline', { underline = true })
+    hl('@markup.strikethrough', { strikethrough = true })
+    hl('@markup.heading', { fg = colors.teal_5, bold = true })
+    hl('@markup.raw', { fg = colors.violet_3, bg = 'NONE' })
+    hl('@markup.raw.markdown', { fg = colors.violet_3, bg = 'NONE' })
+    hl('@markup.raw.markdown_inline', { fg = colors.violet_3, bg = 'NONE' })
+    hl('@markup.link.label', { fg = colors.red_2 })
+    hl('@markup.link.url', { fg = colors.blue_2 })
+    hl('@markup.list.markdown', { fg = colors.orange_4, bold = true })
+    hl('@markup.list.checked', { link = 'Todo' })
+    hl('@markup.list.unchecked', { link = 'Todo' })
+    hl('@textReference', { fg = colors.orange_2 })
+    hl('@stringEscape', { fg = colors.orange_2, bold = true })
 
     hl('htmlTag', { fg = colors.teal_5 })
     hl('htmlEndTag', { fg = colors.teal_5 })
     hl('htmlTagName', { fg = colors.teal_5 })
     hl('htmlSpecialTagName', { fg = colors.teal_5 })
     hl('htmlArg', { fg = colors.orange_4 })
-
 
     hl('NvimTreeRootFolder', { fg = colors.dark_3 })
     hl('NvimTreeFolderIcon', { fg = colors.dark_3 })
@@ -221,14 +240,13 @@ M.set = function()
     hl('BufferLineIndicatorSelected', { bg = colors.light_2 })
     hl('BufferLineFill', { bg = colors.light_3 })
 
-
     -- Telescope nvim
     hl('TelescopePromptBorder', { fg = colors.light_5 })
     hl('TelescopeResultsBorder', { fg = colors.light_5 })
     hl('TelescopePreviewBorder', { fg = colors.light_5 })
     hl('TelescopeNormal', { fg = colors.dark_3 })
     hl('TelescopeSelection', { fg = colors.dark_3 })
-    hl('TelescopeMultiSelection', { fg = colors.dark_3, })
+    hl('TelescopeMultiSelection', { fg = colors.dark_3 })
     hl('TelescopeMatching', { fg = colors.dark_3, bold = true })
     hl('TelescopePromptPrefix', { fg = colors.dark_3, bold = true })
 
@@ -252,7 +270,36 @@ M.set = function()
 
     hl('GitSignsAddLn', { fg = colors.green_6, bg = colors.green_6 })
     hl('GitSignsChangeLn', { fg = colors.orange_1, bg = colors.orange_1 })
-    hl("GitSignsCurrentLineBlame", { fg = colors.dark_2 })
+    hl('GitSignsCurrentLineBlame', { fg = colors.dark_2 })
+
+    hl('SnacksPicker', { link = 'Normal' })
+    hl('SnacksPickerBorder', { link = 'Normal' })
+    hl('SnacksPickerDir', { fg = 'NONE', bg = 'NONE', nocombine = true })
+    hl('SnacksPickerDirectory', { fg = 'NONE', bg = 'NONE', nocombine = true })
+    hl('SnacksIndent', { fg = colors.dark_1, bg = 'NONE', nocombine = true })
+    hl('SnacksPickerListCursorLine', { link = 'PmenuSel' })
+    hl('SnacksPickerPreviewCursorLine', { fg = 'none', bg = 'none', nocombine = true })
+
+    hl('CompileModeMessage', { underline = true })
+    hl('CompileModeMessageRow', { fg = colors.purple_1 })
+    hl('CompileModeMessageCol', { fg = colors.green_3 })
+    hl('CompileModeError', { fg = colors.red_3 })
+    hl('CompileModeWarning', { fg = colors.yellow_6 })
+    hl('CompileModeInfo', { fg = colors.green_4 })
+    hl('CompileModeCommandOutput', { fg = '#6699ff' })
+    hl('CompileModeDirectoryMessage', { fg = '#6699ff' })
+    hl('CompileModeOutputFile', { fg = '#9966cc' })
+    hl('CompileModeCheckResult', { fg = '#ff9966', bold = true })
+    hl('CompileModeCheckTarget', { fg = '#ff9966' })
+    hl('CompileModeErrorLocus', { link = 'Visual' })
+
+    hl('BlinkCmpMenu', { link = 'Pmenu' })
+    hl('BlinkCmpMenuBorder', { link = 'FloatBorder' })
+    hl('BlinkCmpMenuSelection', { link = 'PmenuSel' })
+    hl('BlinkCmpScrollBarThumb', { link = 'PmenuThumb' })
+    hl('BlinkCmpScrollBarGutter', { link = 'PmenuSbar' })
+    hl('BlinkCmpLabel', { fg = colors.dark_4, bg = 'NONE' })
+    hl('BlinkCmpLabelMatch', { fg = colors.red_1, bg = 'NONE', bold = true })
 end
 
 return M

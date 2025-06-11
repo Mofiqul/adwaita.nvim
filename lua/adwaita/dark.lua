@@ -1,4 +1,4 @@
-local u = require 'adwaita.utils'
+local u = require('adwaita.utils')
 local colors = u.gen_colors()
 
 local hl = u.highlight
@@ -6,22 +6,22 @@ local hl = u.highlight
 local M = {}
 
 local set_terminal_color = function()
-    vim.g.terminal_color_0          = colors.libadwaita_dark
-    vim.g.terminal_color_1          = colors.red_2
-    vim.g.terminal_color_2          = colors.green_2
-    vim.g.terminal_color_3          = colors.orange_3
-    vim.g.terminal_color_4          = colors.blue_2
-    vim.g.terminal_color_5          = colors.purple_3
-    vim.g.terminal_color_6          = colors.teal_2
-    vim.g.terminal_color_7          = colors.light_4
-    vim.g.terminal_color_8          = colors.light_7
-    vim.g.terminal_color_9          = colors.red_1
-    vim.g.terminal_color_10         = colors.green_1
-    vim.g.terminal_color_11         = colors.orange_2
-    vim.g.terminal_color_12         = colors.blue_1
-    vim.g.terminal_color_13         = colors.purple_1
-    vim.g.terminal_color_14         = colors.teal_1
-    vim.g.terminal_color_15         = colors.light_3
+    vim.g.terminal_color_0 = colors.libadwaita_dark
+    vim.g.terminal_color_1 = colors.red_2
+    vim.g.terminal_color_2 = colors.green_2
+    vim.g.terminal_color_3 = colors.orange_3
+    vim.g.terminal_color_4 = colors.blue_2
+    vim.g.terminal_color_5 = colors.purple_3
+    vim.g.terminal_color_6 = colors.teal_2
+    vim.g.terminal_color_7 = colors.light_4
+    vim.g.terminal_color_8 = colors.light_7
+    vim.g.terminal_color_9 = colors.red_1
+    vim.g.terminal_color_10 = colors.green_1
+    vim.g.terminal_color_11 = colors.orange_2
+    vim.g.terminal_color_12 = colors.blue_1
+    vim.g.terminal_color_13 = colors.purple_1
+    vim.g.terminal_color_14 = colors.teal_1
+    vim.g.terminal_color_15 = colors.light_3
     vim.g.terminal_color_background = colors.libadwaita_dark
     vim.g.terminal_color_foreground = colors.light_4
 end
@@ -53,7 +53,7 @@ M.set = function()
     hl('LineNr', { fg = colors.dark_2, bg = colors.libadwaita_dark })
     hl('CursorLineNr', {
         fg = colors.light_7,
-        bg = vim.g.adwaita_disable_cursorline and 'NONE' or colors.libadwaita_dark_alt
+        bg = vim.g.adwaita_disable_cursorline and 'NONE' or colors.libadwaita_dark_alt,
     })
     hl('MatchParen', { fg = colors.light_4, bold = true })
     hl('ModeMsg', { fg = colors.light_4, bg = colors.libadwaita_dark_alt })
@@ -77,17 +77,16 @@ M.set = function()
     hl('WarningMsg', { fg = colors.yellow_4, bold = true })
     hl('WildMenu', { fg = colors.light_4, bg = colors.blue_5 })
 
-
     -- Syntax highlight
     hl('Comment', { fg = colors.dark_2 })
     hl('Constant', { fg = colors.violet_2 })
     hl('String', { fg = colors.teal_2 })
     hl('Character', { fg = colors.teal_3 })
-    hl('Number', { fg = colors.teal_3 })
+    hl('Number', { fg = colors.violet_4 })
     hl('Boolean', { fg = colors.purple_2, bold = true })
     hl('Float', { fg = colors.teal_3 })
     hl('Identifier', { fg = colors.orange_2 })
-    hl('Function', { fg = colors.blue_2 })
+    hl('Function', { fg = colors.chameleon_3 })
     hl('Statement', { fg = colors.orange_2, bold = true })
     hl('Conditional', { fg = colors.orange_2, bold = true })
     hl('Repeat', { fg = colors.orange_2, bold = true })
@@ -152,27 +151,27 @@ M.set = function()
     hl('@string.regex', { fg = colors.purple_2 })
     hl('@character', { fg = colors.teal_3 })
     hl('@character.special', { fg = colors.blue_2 })
-    hl('@number', { fg = colors.teal_2 })
+    hl('@number', { fg = colors.violet_4 })
     hl('@boolan', { fg = colors.violet_2, bold = true })
     hl('@float', { fg = colors.teal_3 })
-    hl('@function', { fg = colors.blue_2 })
-    hl('@function.builtin', { fg = colors.blue_2 })
-    hl('@function.macro', { fg = colors.blue_2, bold = true })
+    hl('@function', { fg = colors.chameleon_3 })
+    hl('@function.builtin', { fg = colors.chameleon_3 })
+    hl('@function.macro', { fg = colors.chameleon_3, bold = true })
     hl('@attribute', { fg = colors.orange_4 })
     hl('@annotation', { fg = colors.yellow_2 })
     hl('@parameter', { fg = colors.orange_2 })
     hl('@parameter.reference', { fg = colors.orange_2 })
-    hl('@method', { fg = colors.blue_2 })
-    hl('@field', { fg = colors.teal_2 })
-    hl('@property', { fg = colors.teal_2 })
+    hl('@method', { fg = colors.chameleon_3 })
+    hl('@field', { fg = colors.light_4 })
+    hl('@property', { fg = colors.light_4 })
     hl('@constructor', { fg = colors.blue_2 })
     hl('@conditional', { fg = colors.orange_2, bold = true })
     hl('@repeat', { fg = colors.orange_2, bold = true })
     hl('@label', { fg = colors.purple_2 })
     hl('@operator', { fg = colors.purple_2 })
     hl('@keyword', { fg = colors.orange_2, bold = true })
-    hl('@keyword.function', { fg = colors.blue_2 })
-    hl('@keyword.operator', { fg = colors.purple_2, })
+    hl('@keyword.function', { fg = colors.orange_2, bold = true })
+    hl('@keyword.operator', { fg = colors.purple_2 })
     hl('@exception', { fg = colors.orange_2, bold = true })
     hl('@variable', { fg = colors.light_4 })
     hl('@variable.builtin', { fg = colors.light_4 })
@@ -210,6 +209,27 @@ M.set = function()
     hl('@lsp.type.variable', { link = '@variable' })
     hl('@lsp.type.keyword', { link = '@keyword' })
 
+    hl('@diff.plus', { link = 'DiffAdd' })
+    hl('@diff.minus', { link = 'DiffDelete' })
+    hl('@diff.delta', { link = 'DiffChange' })
+
+    hl('@text', { fg = colors.light_4, bg = 'NONE' }) -- Legacy
+    hl('@markup.strong', { bold = true })
+    hl('@markup.italic', { italic = true })
+    hl('@markup.underline', { underline = true })
+    hl('@markup.strikethrough', { strikethrough = true })
+    hl('@markup.heading', { fg = colors.teal_2, bold = true })
+    hl('@markup.raw', { fg = colors.violet_2, bg = 'NONE' })
+    hl('@markup.raw.markdown', { fg = colors.violet_2, bg = 'NONE' })
+    hl('@markup.raw.markdown_inline', { fg = colors.violet_2, bg = 'NONE' })
+    hl('@markup.link.label', { fg = colors.red_2 })
+    hl('@markup.link.url', { fg = colors.blue_2 })
+    hl('@markup.list.markdown', { fg = colors.orange_4, bold = true })
+    hl('@markup.list.checked', { link = 'Todo' })
+    hl('@markup.list.unchecked', { link = 'Todo' })
+    hl('@textReference', { fg = colors.red_2 })
+    hl('@stringEscape', { fg = colors.orange_2, bold = true })
+
     -- Typescript fix
     hl('typescriptParens', { fg = colors.light_4, bg = 'NONE' })
     -- A custome thing to make cmp doc border invisible
@@ -233,14 +253,13 @@ M.set = function()
     hl('BufferLineIndicatorSelected', { bg = colors.libadwaita_dark })
     hl('BufferLineFill', { bg = colors.libadwaita_dark_alt })
 
-
     -- Telescope nvim
     hl('TelescopePromptBorder', { fg = colors.split_and_borders })
     hl('TelescopeResultsBorder', { fg = colors.split_and_borders })
     hl('TelescopePreviewBorder', { fg = colors.split_and_borders })
     hl('TelescopeNormal', { fg = colors.light_4 })
     hl('TelescopeSelection', { fg = colors.light_4 })
-    hl('TelescopeMultiSelection', { fg = colors.light_4, })
+    hl('TelescopeMultiSelection', { fg = colors.light_4 })
     hl('TelescopeMatching', { fg = colors.light_4, bold = true })
     hl('TelescopePromptPrefix', { fg = colors.light_4, bold = true })
 
@@ -260,8 +279,36 @@ M.set = function()
 
     hl('GitSignsAddLn', { fg = colors.green_2, bg = colors.green_6 })
     hl('GitSignsChangeLn', { fg = colors.orange_1, bg = colors.orange_5 })
-    hl("GitSignsCurrentLineBlame", { fg = colors.dark_2 })
-end
+    hl('GitSignsCurrentLineBlame', { fg = colors.dark_2 })
 
+    hl('SnacksPicker', { link = 'Normal' })
+    hl('SnacksPickerBorder', { link = 'Normal' })
+    hl('SnacksPickerDir', { fg = 'NONE', bg = 'NONE', nocombine = true })
+    hl('SnacksPickerDirectory', { fg = 'NONE', bg = 'NONE', nocombine = true })
+    hl('SnacksIndent', { fg = colors.dark_1, bg = 'NONE', nocombine = true })
+    hl('SnacksPickerListCursorLine', { link = 'PmenuSel' })
+    hl('SnacksPickerPreviewCursorLine', { fg = 'none', bg = 'none', nocombine = true })
+
+    hl('CompileModeMessage', { underline = true })
+    hl('CompileModeMessageRow', { fg = colors.purple_1 })
+    hl('CompileModeMessageCol', { fg = colors.green_3 })
+    hl('CompileModeError', { fg = colors.red_3 })
+    hl('CompileModeWarning', { fg = colors.yellow_6 })
+    hl('CompileModeInfo', { fg = colors.green_4 })
+    hl('CompileModeCommandOutput', { fg = '#6699ff' })
+    hl('CompileModeDirectoryMessage', { fg = '#6699ff' })
+    hl('CompileModeOutputFile', { fg = '#9966cc' })
+    hl('CompileModeCheckResult', { fg = '#ff9966', bold = true })
+    hl('CompileModeCheckTarget', { fg = '#ff9966' })
+    hl('CompileModeErrorLocus', { link = 'Visual' })
+
+    hl('BlinkCmpMenu', { link = 'Pmenu' })
+    hl('BlinkCmpMenuBorder', { fg = colors.light_7, bg = colors.libadwaita_popup })
+    hl('BlinkCmpMenuSelection', { link = 'PmenuSel' })
+    hl('BlinkCmpScrollBarThumb', { link = 'PmenuThumb' })
+    hl('BlinkCmpScrollBarGutter', { link = 'PmenuSbar' })
+    hl('BlinkCmpLabel', { fg = colors.light_4, bg = 'NONE' })
+    hl('BlinkCmpLabelMatch', { fg = colors.blue_3, bg = 'NONE', bold = true })
+end
 
 return M
