@@ -32,7 +32,7 @@ M.set = function()
     -- UI highlight
     hl('Normal', { fg = colors.light_4, bg = colors.libadwaita_dark })
     hl('NormalFloat', { fg = colors.light_4, bg = colors.libadwaita_popup })
-    hl('FloatBorder', { fg = colors.split_and_borders, bg = colors.libadwaita_popup })
+    hl('FloatBorder', { fg = colors.light_3, bg = colors.libadwaita_popup })
     hl('ColorColumn', { bg = colors.libadwaita_dark_alt })
     hl('Cursor', { fg = colors.libadwaita_dark, bg = colors.light_5 })
     hl('CursorLine', { bg = colors.libadwaita_dark_alt })
@@ -303,12 +303,22 @@ M.set = function()
     hl('CompileModeErrorLocus', { link = 'Visual' })
 
     hl('BlinkCmpMenu', { link = 'Pmenu' })
-    hl('BlinkCmpMenuBorder', { fg = colors.light_7, bg = colors.libadwaita_popup })
+    hl('BlinkCmpMenuBorder', { link = 'FloatBorder' })
     hl('BlinkCmpMenuSelection', { link = 'PmenuSel' })
     hl('BlinkCmpScrollBarThumb', { link = 'PmenuThumb' })
     hl('BlinkCmpScrollBarGutter', { link = 'PmenuSbar' })
     hl('BlinkCmpLabel', { fg = colors.light_4, bg = 'NONE' })
     hl('BlinkCmpLabelMatch', { fg = colors.blue_3, bg = 'NONE', bold = true })
+
+    hl('NeogitDiffAdd', { link = 'DiffAdd' })
+    hl('NeogitDiffAddHighlight', { link = 'DiffAdd' })
+    hl('NeogitDiffDelete', { link = 'DiffDelete' })
+    hl('NeogitDiffDeleteHighlight', { link = 'DiffDelete' })
+    hl('NeogitDiffContext', { link = 'Normal' })
+    hl('NeogitDiffContextHighlight', { link = 'Normal' })
+    hl('NeogitDiffAddCursor', { fg = colors.teal_3, bg = colors.libadwaita_dark_alt })
+    hl('NeogitDiffContextCursor', { link = 'CursorLine' })
+    hl('NeogitDiffDeleteCursor', { fg = colors.red_1, bg = colors.libadwaita_dark_alt })
 end
 
 return M
