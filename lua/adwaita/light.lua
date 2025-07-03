@@ -28,7 +28,7 @@ local set_terminal_color = function()
 end
 M.set = function()
     set_terminal_color()
-    hl('Normal', { fg = colors.dark_3, bg = colors.light_2 })
+    hl('Normal', { fg = colors.dark_3, bg = colors.light_1 })
     hl('NormalFloat', { fg = colors.dark_3, bg = colors.light_3 })
     hl('FloatBorder', { fg = colors.dark_3, bg = colors.light_3 })
     hl('ColorColumn', { bg = colors.light_3 })
